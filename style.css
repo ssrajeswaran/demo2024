@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* use # for ids. this takes priority over paragraph tags! */
+#main {
+    color:aquamarine;
+    background-color:black;
+    width: 500px;
+}
+
+/* use . for classes*/
+.A{
+    border: 5px solid black;
+    /* include space around text box and border */
+    padding: 20px 20px 20px 20px;
+}

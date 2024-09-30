@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title of webpage -->
+    <title>personal webpage </title>
+    
+    <!--link to style css code to tell this code what to do with specific tags-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- Different types of headers -->
+    <h1 style="color:blueviolet; font-size:48">Hellow testing</h1>
+
+    <h3>Subtitle</h3>
+
+    <button id = 'navigateButton'>Go to another page</button>
+
+    <!-- include javascript code -->
+    <script>
+        // creates a constant that is equal to any of the elements with the navigateButton ID
+        const navigateButton = document.getElementById('navigateButton')
+        
+        // if you click, it will do the following function 
+        navigateButton.addEventListener('click', function(){
+            window.location.href = 'test.html'
+        })
+
+    </script>
+
+    <!-- paragraphs-->
+
+    <!-- tag with a name; main. can make styles related to anything with this tag
+     tags/ids have a higher priority than paragraph! so a style convention in id in the
+     css file will overcome any style conventions for p-->
+    <p id = "main">testing a paragraph</p>
+    <p class = "A">second line of <i>special</i>para</p>
+    <p>lalalalal <b> very bold </b> but not bold </p>
+
+    Tagless words will also work to make a new para without an error, but not recommended
+
+    <!-- make sure these links start with https, otherwise will not work-->
+    <p><a href="https://www.google.com"> Click on this link to lead to google! </a> </p>
+
+    <!-- can also link to existing html files that you already created-->
+    <p><a href="test.html"> Click on this link to lead to our test scatterplot! </a> </p>
+
+    <!--bulleted list-->
+    <ul class="A">
+        To do:
+        <li>clock</li>
+        <li>ring</li>
+        <li>computer</li>
+    </ul>
+
+    <!--src is link to image, alt is text you want to associate w image, 
+    width can make smaller otherwise may take the full screen width.
+    grab image link by right click then copy image address-->
+
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221201182629/Enableliveserver1.jpg" 
+    alt="show the picture" width=500>
+
+</body>
+</html>
